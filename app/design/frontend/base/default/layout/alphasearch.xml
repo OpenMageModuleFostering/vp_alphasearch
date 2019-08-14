@@ -1,0 +1,27 @@
+<?xml version="1.0"?>   
+<layout version="0.0.1">
+  <default>
+    <reference name="head">
+        <action method="addJs"><script>alphasearch/jquery_1_4_2_min.js</script></action>
+    </reference>
+    <reference name="top.links" ifconfig="alphasearch/alphasearch/alphasearch">
+        <action method="addLink" translate="label title" module="alphasearch" ifconfig="alphasearch/alphasearch/alphasearch">
+            <label>Alphasearch</label>
+            <url>alphasearch</url>
+            <title>Alphasearch</title>
+            <prepare/>
+            <urlParams/>
+            <position>1</position>
+        </action>
+    </reference>
+  </default>
+  <alphasearch_index_index>   
+    <reference name="root">   
+      <action method="setTemplate"><template>page/1column.phtml</template></action>   
+    </reference>   
+    <reference name="content">   
+      <block type="alphasearch/index" name="alphasearch_index" template="alphasearch/index.phtml"/>   
+    </reference>   
+  </alphasearch_index_index>   
+</layout>   
+	

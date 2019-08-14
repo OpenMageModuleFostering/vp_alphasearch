@@ -1,0 +1,41 @@
+<div style="width=100%;background-color:lightgray">
+<?php
+$i=1;
+foreach (range('A', 'Z') as $char) {
+    echo "<span style='padding-right: 13px;padding-left: 13px;'><a id='a".$i."' onclick='checksku(this.id)'>".$char . "</a></span>";
+$i++;
+}
+?>
+</div>
+<script type="text/javascript">
+		  function checksku(id)
+		  {
+
+		   var alpha = jQuery("#"+id).text();
+			var formData = {alpha:alpha}; 
+			jQuery.ajax({
+				  url: "<?php echo Mage::getBaseUrl(); ?>alphasearch/index/checkproduct",
+				  type: "POST",
+				  dataType: "json",
+				  data: formData,
+					success: function(data) 
+					  {       
+						var option = ''; 
+						  if(data !== null)
+						{ 
+							jQuery('#alpha').html(' ');
+							jQuery.each(data, function(key, val) {
+							   option = '<a href='+ val.producturl +'>' + val.name + '</a>';
+							   jQuery("#alpha").append('<p>'+ option +'</p>');
+							  });
+						  }
+						  else
+						  {
+							jQuery('#alpha').html(' ');
+							jQuery("#alpha").append('<p>No Records</p>');
+						  }
+					  }
+			  });
+		  }
+</script>
+<div id="alpha" style="margin-top:10px;"></div>
