@@ -4,7 +4,7 @@
     <Vp_Alphasearch>
       <active>true</active>
       <codePool>community</codePool>
-      <version>0.0.1</version>
+      <version>1.0.0</version>
     </Vp_Alphasearch>
   </modules>
 </config>

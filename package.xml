@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <package>
     <name>Vp_Alphasearch</name>
-    <version>0.0.1</version>
+    <version>1.0.0</version>
     <stability>stable</stability>
     <license>OSL</license>
     <channel>community</channel>
     <extends/>
-    <summary>This extension helps to search products alphabetically.</summary>
-    <description>This extension helps to search products alphabetically.</description>
-    <notes>This extension helps to search products alphabetically.</notes>
+    <summary>This extension can help you to find products alphabetically.</summary>
+    <description>This extension can help you to find products alphabetically.</description>
+    <notes>This extension can help you to find products alphabetically.</notes>
     <authors><author><name>vpinfo</name><user>vpinfo</user><email>vpinfo39@gmail.com</email></author></authors>
-    <date>2014-10-15</date>
-    <time>05:05:28</time>
-    <contents><target name="mageetc"><dir name="modules"><file name="Vp_Alphasearch.xml" hash="8c0b8a2cf8b7a2b4a2f2fcd655f08759"/></dir></target><target name="mage"><dir name="js"><dir name="alphasearch"><file name="jquery_1_4_2_min.js" hash="b80a2154ce061c8242031d9a4892c5a6"/></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="alphasearch.xml" hash="554e8fad132995a60356ab3027b5bc58"/></dir><dir name="template"><dir name="alphasearch"><file name="index.phtml" hash="22313750f13dc754ae3ace5dd200a0f4"/></dir></dir></dir></dir></dir></target><target name="magecommunity"><dir name="Vp"><dir name="Alphasearch"><dir name="Block"><file name="Index.php" hash="1617f7334e403bd71f1bab909dce1721"/></dir><dir name="Helper"><file name="Data.php" hash="55c3f46d9bfec4a798b469ced5cf776c"/></dir><dir name="controllers"><file name="IndexController.php" hash="eea8edd4390fdef2382dbd17a8cc307d"/></dir><dir name="etc"><file name="adminhtml.xml" hash="dfbb9130b4818ed2c45791534d36600d"/><file name="config.xml" hash="b868a884ed8fadc6429c93549fb1af07"/><file name="system.xml" hash="9765df492307bdf9633fd0bf8425fe8f"/></dir></dir></dir></target></contents>
+    <date>2014-10-11</date>
+    <time>13:21:11</time>
+    <contents><target name="magecommunity"><dir name="Vp"><dir name="Alphasearch"><dir name="Block"><file name="Index.php" hash="1617f7334e403bd71f1bab909dce1721"/></dir><dir name="Helper"><file name="Data.php" hash="55c3f46d9bfec4a798b469ced5cf776c"/></dir><dir name="controllers"><file name="IndexController.php" hash="642fa4c7a27e760093d7e059f0532ba5"/></dir><dir name="etc"><file name="config.xml" hash="df82c43e1a4ac84087075ebd24d4dd7f"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Vp_Alphasearch.xml" hash="09a29c01157e89a497c5d4cb0a071f8b"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="alphasearch.xml" hash="74ef25308db58db3307775eb8596b26a"/></dir><dir name="template"><dir name="alphasearch"><file name="index.phtml" hash="b1f6f532fb10885505049ede9c2fe68f"/></dir></dir></dir></dir></dir></target><target name="mage"><dir name="js"><dir name="alphasearch"><file name="jquery-1.7.2.min.js" hash="89b625bc88e046817e2f1d9dcb0c1267"/></dir></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
 </package>

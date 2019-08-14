@@ -1,33 +1,23 @@
 <?php
 class Vp_Alphasearch_IndexController extends Mage_Core_Controller_Front_Action{
-    public function IndexAction() 
-    {
-        $systemval = Mage::getStoreConfig('alphasearch/alphasearch/alphasearch');
-        
-        if($systemval == 1)
-        {
-    	  $this->loadLayout();   
-    	  $this->getLayout()->getBlock("head")->setTitle($this->__("Alphasearch"));
-    	        $breadcrumbs = $this->getLayout()->getBlock("breadcrumbs");
-          $breadcrumbs->addCrumb("home", array(
-                    "label" => $this->__("Home Page"),
-                    "title" => $this->__("Home Page"),
-                    "link"  => Mage::getBaseUrl()
-    		   ));
+    public function IndexAction() {
+      
+	  $this->loadLayout();   
+	  $this->getLayout()->getBlock("head")->setTitle($this->__("Alphasearch"));
+	        $breadcrumbs = $this->getLayout()->getBlock("breadcrumbs");
+      $breadcrumbs->addCrumb("home", array(
+                "label" => $this->__("Home Page"),
+                "title" => $this->__("Home Page"),
+                "link"  => Mage::getBaseUrl()
+		   ));
 
-          $breadcrumbs->addCrumb("alphasearch", array(
-                    "label" => $this->__("Alphasearch"),
-                    "title" => $this->__("Alphasearch")
-    		   ));
+      $breadcrumbs->addCrumb("alphasearch", array(
+                "label" => $this->__("Alphasearch"),
+                "title" => $this->__("Alphasearch")
+		   ));
 
-          $this->renderLayout(); 
-    	  }
-        else
-        {
-          //$this->_redirectUrl(Mage::getBaseUrl());
-          $this->norouteAction();
-return;
-        }
+      $this->renderLayout(); 
+	  
     }
 
     public function checkproductAction()
