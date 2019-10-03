@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Vp_Alphasearch",
+    "name": "OpenMageModuleFostering\/Vp_Alphasearch",
     "type": "magento-module",
     "license": "OSL",
     "homepage": "",
     "description": "This extension can help you to find products alphabetically.",
     "authors": [
-    {
-        "name": "vpinfo",
-        "email": "vpinfo39@gmail.com"
-    }
-],
+        {
+            "name": "vpinfo",
+            "email": "vpinfo39@gmail.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
